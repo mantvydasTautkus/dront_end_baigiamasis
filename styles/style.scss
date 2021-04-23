@@ -1,40 +1,239 @@
 $black: rgb(28, 28, 28);
-$text_color: white;
-
+$text_color: rgb(231, 227, 227);
+body{
+    margin: 0;
+}
+h1{
+    font-size: 36px;
+}
 @mixin inline_flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-body div{
-    max-width: 1400px;
-    margin: auto;
+.page_wrapper{
     font-size: 20px;
 }
-
+.nav-img{
+    margin-left: 30px;
+}
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-
     background-color: $black;
-    div{
-        nav{
-            @include inline_flex();
-            padding-left: 25px;
-            padding-right: 25px;
-            ul{
-                @include inline_flex();
-                color: $text_color;
-                li{
-                    list-style-type: none;
-                    padding: 10px;
-                }
-            }
-        }
-    }
+}
+.header-nav{
+
+    @include inline_flex();
+    margin: auto;
+    max-width: 1200px;
+}
+ ul{
+    @include inline_flex();
+    color: $text_color;
+ }
+
+li{
+    list-style-type: none;
+    padding: 20px;
 }
 
+// -------------------------------------;
+
+.bacground {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    object-fit: cover;
+    max-height: 750px;
+    min-height: 750px;
+}  
+
+.section_wrapper{
+    color: $text_color;
+    padding-top: 200px;
+    max-height: 600px;
+    @include inline_flex();
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div div .section_oject1{
+    @include inline_flex();
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.logo2{
+    width: 350px;
+}
+
+.line{
+    border: 1px;
+    border-color: $text_color;
+    background-color: tomato;
+    height: 1px;
+    width: 75px;
+    margin: 0;
+}
+.downolad_button {
+    
+    background: transparent;
+    width: 135px;
+    height: 42px;
+    color: white;
+    border-style: solid;
+    border-color: $text_color;
+}
+form{
+    border-radius: 5px;
+    width: 360px;
+    margin: 40px;
+    margin-left: 80px;
+    background-color:$text_color;
+    color: black;
+    margin-right: 0px;
 
 
+
+}
+form h1{
+    padding-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 27px;
+
+
+}
+.form-wrapper{
+    @include inline_flex();
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: flex-start;
+}
+span{
+    color: tomato;
+}
+.details{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding-top: 20px;
+}
+.top_text{
+    background-color: $text_color;
+}
+.radial-wrapper{
+    @include inline_flex();
+}
+.radial{
+    @include inline_flex();
+    padding-right: 10px;
+}
+.get-started{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(65, 211, 149);
+}
+.radial-button{
+    width: 30px;
+    height: 30px;
+    color: rgb(65, 211, 149);
+}
+.get-started{
+    font-size: 25px;
+    color: $text_color;
+}
+
+// ------------------------------
+.container{
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.media{
+    max-width: 1200px;
+    margin: 0 auto;
+    @include inline_flex();
+    h3{
+        margin-bottom: 10px;
+    }
+    p{
+        max-width: 420px;
+        color: rgb(209, 206, 206);
+        margin-top: 10px;
+    }
+    a{
+        padding: 0 60px;
+    }
+}
+// ---------------------------------
+
+.bacground-kalnai{
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+    object-fit: cover;
+    max-height: 600px;
+    min-height: 600px;
+}
+// _______________________
+
+.black-container{
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: white;
+}
+
+.black-wrapper{
+     max-width: 1200px;
+    margin: 0 auto;
+    @include inline_flex();
+    height: 600px;
+}
+.big-logo{
+    width: 388px;
+    height: 210px;
+}
+.black-text{
+    width: 500px;
+    .line2{
+         border: 1px;
+        border-color: $text_color;
+        background-color: tomato;
+        height: 1px;
+        width: 150px;
+        margin: 0;
+    }
+    .black-element{
+        @include inline_flex();
+        img{
+            width: 100px;
+            padding: 20px;
+        
+        }
+        h4{
+            margin-top: 15px;
+           margin-bottom: 8px; 
+        }
+    }
+
+}

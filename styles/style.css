@@ -1,7 +1,17 @@
-body div {
-  max-width: 1400px;
-  margin: auto;
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.page_wrapper {
   font-size: 20px;
+}
+
+.nav-img {
+  margin-left: 30px;
 }
 
 header {
@@ -12,7 +22,7 @@ header {
   background-color: #1c1c1c;
 }
 
-header div nav {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,11 +32,11 @@ header div nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin: auto;
+  max-width: 1200px;
 }
 
-header div nav ul {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,11 +46,302 @@ header div nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #e7e3e3;
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.bacground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 750px;
+  min-height: 750px;
+}
+
+.section_wrapper {
+  color: #e7e3e3;
+  padding-top: 200px;
+  max-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div div .section_oject1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+}
+
+.logo2 {
+  width: 350px;
+}
+
+.line {
+  border: 1px;
+  border-color: #e7e3e3;
+  background-color: tomato;
+  height: 1px;
+  width: 75px;
+  margin: 0;
+}
+
+.downolad_button {
+  background: transparent;
+  width: 135px;
+  height: 42px;
+  color: white;
+  border-style: solid;
+  border-color: #e7e3e3;
+}
+
+form {
+  border-radius: 5px;
+  width: 360px;
+  margin: 40px;
+  margin-left: 80px;
+  background-color: #e7e3e3;
+  color: black;
+  margin-right: 0px;
+}
+
+form h1 {
+  padding-top: 10px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 27px;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding-left: 70px;
+  padding-right: 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+span {
+  color: tomato;
+}
+
+.details {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.top_text {
+  background-color: #e7e3e3;
+}
+
+.radial-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
+}
+
+.get-started {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #41d395;
+}
+
+.radial-button {
+  width: 30px;
+  height: 30px;
+  color: #41d395;
+}
+
+.get-started {
+  font-size: 25px;
+  color: #e7e3e3;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.media {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media h3 {
+  margin-bottom: 10px;
+}
+
+.media p {
+  max-width: 420px;
+  color: #d1cece;
+  margin-top: 10px;
+}
+
+.media a {
+  padding: 0 60px;
+}
+
+.bacground-kalnai {
+  width: 100%;
+  z-index: -1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 600px;
+  min-height: 600px;
+}
+
+.black-container {
+  background-color: #1c1c1c;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: white;
 }
 
-header div nav ul li {
-  list-style-type: none;
-  padding: 10px;
+.black-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+.big-logo {
+  width: 388px;
+  height: 210px;
+}
+
+.black-text {
+  width: 500px;
+}
+
+.black-text .line2 {
+  border: 1px;
+  border-color: #e7e3e3;
+  background-color: tomato;
+  height: 1px;
+  width: 150px;
+  margin: 0;
+}
+
+.black-text .black-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.black-text .black-element img {
+  width: 100px;
+  padding: 20px;
+}
+
+.black-text .black-element h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=style.css.map */
