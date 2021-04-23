@@ -1,0 +1,40 @@
+$black: rgb(28, 28, 28);
+$text_color: white;
+
+@mixin inline_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body div{
+    max-width: 1400px;
+    margin: auto;
+    font-size: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: $black;
+    div{
+        nav{
+            @include inline_flex();
+            padding-left: 25px;
+            padding-right: 25px;
+            ul{
+                @include inline_flex();
+                color: $text_color;
+                li{
+                    list-style-type: none;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
