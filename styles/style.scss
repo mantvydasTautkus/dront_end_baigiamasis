@@ -23,6 +23,7 @@ header {
     left: 0;
     width: 100%;
     background-color: $black;
+    z-index: 2;
 }
 .header-nav{
 
@@ -38,6 +39,10 @@ header {
 li{
     list-style-type: none;
     padding: 20px;
+    a{
+        text-decoration: none;
+        color: rgb(223, 221, 221);
+    }
 }
 
 // -------------------------------------;
@@ -93,7 +98,7 @@ div div .section_oject1{
     border-color: $text_color;
 }
 form{
-    border-radius: 5px;
+    border-radius: 10px;
     width: 360px;
     margin: 40px;
     margin-left: 80px;
@@ -106,10 +111,10 @@ form{
 }
 form h1{
     padding-top: 10px;
-    margin-left: 70px;
+    margin-left: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 27px;
+    font-size: 25px;
 
 
 }
@@ -118,9 +123,10 @@ form h1{
     justify-content: flex-start;
     flex-direction: column;
     background-color: white;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
     align-items: flex-start;
+    border-radius: 5px;
 }
 span{
     color: tomato;
@@ -129,7 +135,7 @@ span{
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 100%;
+    width: 300px;
     padding-top: 20px;
 }
 .top_text{
@@ -141,6 +147,7 @@ span{
 .radial{
     @include inline_flex();
     padding-right: 10px;
+    color: rgb(28, 28, 28);
 }
 .get-started{
     width: 100%;
@@ -198,13 +205,12 @@ span{
 .black-container{
     background-color: rgb(28, 28, 28);
     width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
     color: white;
 }
 
 .black-wrapper{
-     max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     @include inline_flex();
     height: 600px;
@@ -236,4 +242,215 @@ span{
         }
     }
 
+}
+
+
+// ------------------------------------
+
+.white-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+    box-sizing: border-box;
+    .white-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        @include inline_flex();
+        flex-direction: column;
+        height: 600px;
+        .white-top{
+            @include inline_flex();
+            flex-direction:column;
+        }
+        h1{
+            margin-top: 80px;
+        }
+        .white-elements{
+            @include inline_flex();
+            .white-element{
+                @include inline_flex();
+                flex-direction: column;
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+
+// _____________________________________
+
+.pricing-container{
+    background-color: rgb(102, 150, 226);
+    width: 100%;
+    box-sizing: border-box;
+    .pricing-wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        @include inline_flex();
+        justify-content: start;
+        color: white;
+        flex-direction: column;
+        height: 900px;
+        h1{
+            padding-top: 50px;
+        }
+        p{
+            margin: 30px;
+            margin-bottom: 10px;
+        }
+        .pricing-wrapper2{
+            @include inline_flex();
+            align-items: flex-end;
+            padding-top: 60px;
+            padding-bottom: 50px;
+            .pricing-1{
+                padding: 20px;
+                @include inline_flex();
+                flex-direction: column;
+                align-items: center;
+                .pricing{
+                    font-size: 94px;
+                    height: 100px;
+                }
+                li{
+                    width: 310px;
+                    color: rgb(28, 28, 28);
+                    background-color: rgb(255, 255, 255);
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    span{
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+                .green{
+                    background-color:rgb(65, 211, 149)
+                }
+                .black{
+                    background-color: rgb(50, 50, 50);
+                    color: rgb(255, 255, 255);
+                }
+                div{
+                    width: 350px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+
+// _____________________________________________
+
+.slider-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    height: 600px;
+    h1{
+        margin-top: 0;
+    }
+    .swiper-container{
+        .swiper-top-text{
+            @include inline_flex();
+            flex-direction: column;
+            padding: 40px
+        }
+        .swiper-wrapper{
+            .swiper-slide{
+                @include inline_flex();
+                justify-content: center;
+                align-items: flex-end;
+                .coment-wrapper{
+                    @include inline_flex();
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                }
+                .slider-text{
+                    width: 300px;
+                    background-color: rgb(102, 150, 226);
+                    border-radius: 15px;
+                    p{
+                        margin: 30px
+                    }
+                }
+                .slider-user{
+                    @include inline_flex();
+                    img{
+                        width: 80px;
+                        border-radius: 80px;
+                        margin-right: 20px;
+                    }
+                    div{
+                        h2{
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  } 
+  
+.swiper-pagination-bullets{
+    padding-top: 100px;
+}
+.swiper-pagination-bullet{
+    width: 50px;
+    height: 50px;
+}
+
+
+// ___________________________________________________
+
+.contact-container{
+    background-color: rgb(226, 120, 102);
+    width: 100%;
+    .contact-wrapper{
+        max-width: 1200px;
+        height: 600px;
+        margin: 0 auto;
+        color: white;
+        h1{
+            margin-top: 70px;
+        }
+        .contact-wrapper{
+            @include inline_flex();
+            flex-direction: column;
+            justify-content: center;
+        }
+        .canotact-form{
+            margin-top: 20px;
+            @include inline_flex();
+        }
+    }
+}
+
+
+// _____________________________________________________
+
+.footer-container{
+    background-color: rgb(28, 28, 28);
+    width: 100%;
+    .footer-wrapper{
+        max-width: 1200px;
+        height: 130px;
+        margin: 0 auto;
+        @include inline_flex();
+        justify-content: space-between;
+        div {
+
+            img{
+            margin-right: 100px;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
 }
