@@ -72,12 +72,12 @@ li{
         margin: 0px;
       
     }
-
     .section_wrapper{
         flex-direction: column;
-        justify-content: center;
+        align-items:center !important;
+        justify-content: center ;
         margin: auto;
-        min-height: 1100px;
+        height: 1050px ;
         form{
             margin-bottom: 50px;
             margin: 0;
@@ -95,7 +95,7 @@ li{
         }
     }
     .bacground{
-        min-height: 1300px;
+        min-height: 1500px ;
     }
 
    .media{
@@ -115,9 +115,9 @@ li{
 }  
 @media only screen and (max-width: 740px){
     .features-container{
-        min-height: 1400px;
+        min-height: 1200px;
         .bacground-kalnai{
-            min-height: 1400px;
+            min-height: 1200px;
             }
         }
     .slide-wrapper{
@@ -154,8 +154,24 @@ li{
     }
     }
 
+@media only screen and (max-width: 740px){
     .white-elements{
-        flex-direction:row;
+        flex-direction:column ;
+        
+    }
+    .pricing-wrapper2{
+        flex-direction: column;
+    }
+}
+
+    .footer-wrapper{
+        div{
+            img{
+                margin: 5px;
+                margin-right: 5px !important;
+            }
+        }
+        
     }
 // -------------------------------------;
 
@@ -173,8 +189,7 @@ li{
 .section_wrapper{
     @include content-wrapper();
     color: $text_color;
-    padding-top: 200px;
-    max-height: 600px;
+    padding-top: 150px;
     @include inline_flex();
     align-items: flex-start;
  
@@ -289,6 +304,10 @@ span{
 .media{
     @include content-wrapper();
     @include inline_flex();
+    .media-links{
+        @include inline_flex();
+        justify-content: space-between;
+    }
     h3{
         margin-bottom: 10px;
     }
@@ -296,9 +315,6 @@ span{
         max-width: 420px;
         color: rgb(209, 206, 206);
         margin-top: 10px;
-    }
-    a{
-        padding: 0 60px;
     }
 }
 // ---------------------------------
@@ -468,7 +484,7 @@ span{
         @include content-wrapper();
         @include inline_flex();
         flex-direction: column;
-        height: 600px;
+        min-height: 600px;
         .white-top{
             @include inline_flex();
             flex-direction:column;
@@ -478,10 +494,13 @@ span{
         }
         .white-elements{
             @include inline_flex();
-            height: 400px;
+            
             .white-element{
                 @include inline_flex();
                 flex-direction: column;
+                p{
+                    padding: 20px;
+                }
                 img{
                     width: 50px;
                 }
@@ -502,7 +521,7 @@ span{
         justify-content: start;
         color: white;
         flex-direction: column;
-        height: 900px;
+        min-height: 900px;
         h1{
             padding-top: 50px;
         }
