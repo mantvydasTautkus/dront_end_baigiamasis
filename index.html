@@ -17,15 +17,15 @@
         <header>
             <nav class="header-nav">
                 <img src="images/logo.svg" class="nav-img" alt="logo">
-                <ul>
+                <ul class="topnav" id="myLinks">
                     <li><a href="#Features">Features</a></li>
                     <li><a href="#Abaut">Abaut</a></li>
                     <li><a href="#Pricing">Pricing</a></li>
                     <li><a href="#Rewievs">Reviews</a></li>
                     <li><a href="#Contact">Contact</a></li>
-                   
                 </ul>
-                </nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+            </nav>
         </header>
 
         <main>
@@ -86,9 +86,95 @@
                         <div class="tab-container">
                             <div class="tab-nav">
                                 <div class="tab-ul">
-                                    <li data-slide="1"><a>Register</a></li>
-                                    <li data-slide="2"><a>Aply</a></li>
-                                    <li data-slide="3"><a>Recive</a></li>
+                                    <li data-tab-target="#home" class="active tab"><a class="tab-link-text">Register</a></li>
+                                    <li data-tab-target="#tab2" class="tab"><a class="tab-link-text">Aply</a></li>
+                                    <li data-tab-target="#tab3" class="tab"><a class="tab-link-text">Recive</a></li>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="home" data-tab-content class="active">
+                                        <div class="swiper-slide slide-wrapper" data-slide="1">
+                                            <div class="tab-text-wrapper">
+                                                <h1>Tabs with soft transitioning
+                                                    effect. Explained propriety
+                                                    of out perpetual his you.</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                                    penatibus et magnis dis parturient montes</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet.</p>
+                                            </div>
+                                            <div>
+                                                <div class="small-photo-container">
+                                                    <div class="image-container">
+                                                        <img src="images/tabs-big.png" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                    <div class="image-container">
+                                                        <img src="images/tabs-big.png" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                </div>
+                                                <div class="image-container2">
+                                                    <img src="images/tabs-small.png" class="tab-foto2" alt="rand-foto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab2" data-tab-content>
+                                        <div class="swiper-slide slide-wrapper" data-slide="1">
+                                            <div class="tab-text-wrapper">
+                                                <h1>Tabs with soft transitioning
+                                                    effect. Explained propriety
+                                                    of out perpetual his you.</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                                    penatibus et magnis dis parturient montes</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet.</p>
+                                            </div>
+                                            <div>
+                                                <div class="small-photo-container">
+                                                    <div class="image-container">
+                                                    <img src="images/tabs-big2.jpg" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                    <div class="image-container">
+                                                    <img src="images/tabs-big22.jpg" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                </div>
+                                                <div class="image-container2">
+                                                    <img src="images/tabs-small2.jpg" class="tab-foto2" alt="rand-foto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab3" data-tab-content>
+                                        <div class="swiper-slide slide-wrapper" data-slide="1">
+                                            <div class="tab-text-wrapper">
+                                                <h1>Tabs with soft transitioning
+                                                    effect. Explained propriety
+                                                    of out perpetual his you.</h1>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                                    penatibus et magnis dis parturient montes</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                    bibendum laoreet.</p>
+                                            </div>
+                                            <div>
+                                                <div class="small-photo-container">
+                                                    <div class="image-container">
+                                                    <img src="images/tabs-big3.jfif" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                    <div class="image-container">
+                                                    <img src="images/tabs-big33.jfif" class="tab-foto1" alt="rand-foto">
+                                                    </div>
+                                                </div>
+                                                <div class="image-container2">
+                                                    <img src="images/tabs-small3.jpg" class="tab-foto2" alt="rand-foto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
