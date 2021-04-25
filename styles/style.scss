@@ -14,8 +14,11 @@ h1{
 @mixin content-wrapper{
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@mixin content-wrapper-mobile{
+    max-width: 100%px;
 }
 .page_wrapper{
     font-size: 20px;
@@ -64,23 +67,42 @@ li{
         width: 80px; 
     }
     .header-nav{
-        align-items: flex-start;
+        justify-content: space-between;
+        @include content-wrapper-mobile();
+        margin: 0px;
       
     }
 
     .section_wrapper{
         flex-direction: column;
-        min-height: 1000px;
-        padding-top: 0px;
+        justify-content: center;
+        margin: auto;
+        min-height: 1100px;
+        form{
+            margin-bottom: 50px;
+            margin: 0;
+            margin-bottom: 10px;
+            width: 280px;
+            .details{
+                width: 210px;
+            }
+        }
+        .downolad_button{
+            margin-bottom: 10px;
+        }
+        .logo2{
+            width: 300px;
+        }
     }
     .bacground{
-        min-height: 1250px;
-        
+        min-height: 1300px;
     }
 
-}   .media{
+   .media{
         p{
-            width: 300px;
+            font-size: 15px;
+            max-width: 300px;
+            min-width: 100px;
         }
         nav{
             @include inline_flex();
@@ -89,9 +111,52 @@ li{
                 padding: 5px;
             }
         }
+    }
+}  
+@media only screen and (max-width: 740px){
+    .features-container{
+        min-height: 1400px;
+        .bacground-kalnai{
+            min-height: 1400px;
+            }
+        }
+    .slide-wrapper{
 
-}
+        flex-direction: column;
+        }
 
+    .feature-wrapper{
+        .tab-section{ 
+            .tab-container{
+                .tab-nav{
+                    flex-direction: column;
+                        .tab-ul{
+                            flex-direction: row !important;
+                            margin-right: 0px;
+                            min-width: 300px;
+                            li{
+                                max-height: 60px;
+                                max-width: 60px;
+                                margin-right: 0px !important;
+                                font-size: 19px;
+                                
+                            }
+                        }
+                    }
+            }   }
+    
+        }
+    .black-wrapper{
+        flex-direction: column;
+        .big-logo{
+            width: 250px;
+        }
+    }
+    }
+
+    .white-elements{
+        flex-direction:row;
+    }
 // -------------------------------------;
 
 .bacground {
@@ -249,7 +314,6 @@ span{
         object-fit: cover;
         height: 600px;
         z-index: -2;
-        height: 600px;
     }
     .feature-wrapper{
         @include content-wrapper();
@@ -361,20 +425,20 @@ span{
 .black-wrapper{
     @include content-wrapper();
     @include inline_flex();
-    height: 600px;
+    min-height: 600px;
 }
 .big-logo{
     width: 388px;
     height: 210px;
 }
 .black-text{
-    width: 500px;
+    max-width: 500px;
     .line2{
          border: 1px;
         border-color: $text_color;
         background-color: tomato;
         height: 1px;
-        width: 150px;
+        max-width: 150px;
         margin: 0;
     }
     .black-element{
