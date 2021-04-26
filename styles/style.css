@@ -12,6 +12,7 @@ h1 {
 
 .nav-img {
   margin-left: 30px;
+  margin-top: 15px;
 }
 
 header {
@@ -73,13 +74,32 @@ li a {
     display: block;
     height: 60px;
     width: 60px;
-    margin: 30px;
+    margin: 10px;
+  }
+  .nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: space-between;
   }
   .header-nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     max-width: 100%px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     margin: 0px;
   }
   .section_wrapper {

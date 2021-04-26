@@ -27,6 +27,7 @@ h1{
 }
 .nav-img{
     margin-left: 30px;
+    margin-top: 15px;
 }
 header {
     position: fixed;
@@ -67,11 +68,18 @@ li{
         display: block;
         height: 60px;
         width: 60px; 
-        margin: 30px;
+        margin: 10px;
+    }
+    .nav-wrapper{
+        @include inline_flex();
+        flex-direction: column;
+        justify-content:
+        justify-content: space-between 
     }
     .header-nav{
         justify-content: space-between;
         @include content-wrapper-mobile();
+        align-items: start;
         margin: 0px;
       
     }
