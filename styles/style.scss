@@ -1,5 +1,7 @@
 $black: rgb(28, 28, 28);
 $text_color: rgb(231, 227, 227);
+$hover-color: rgb(226, 120, 102);
+$text_color-grey: rgb(128, 128, 128);
 body{
     margin: 0;
 }
@@ -45,7 +47,7 @@ header {
     color: $text_color;
  }
 .topnav li:hover{
-    background-color: rgb(226, 120, 102);
+    background-color: $hover-color;
 }
 li{
     list-style-type: none;
@@ -56,15 +58,16 @@ li{
     }
 
 }
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 820px){
     .topnav {
         display: none;
     }
     .icon {
-        background: rgb(226, 120, 102);
+        background: $hover-color;
         display: block;
-        height: 80px;
-        width: 80px; 
+        height: 60px;
+        width: 60px; 
+        margin: 30px;
     }
     .header-nav{
         justify-content: space-between;
@@ -76,23 +79,37 @@ li{
         flex-direction: column;
         align-items:center !important;
         justify-content: center ;
-        margin: auto;
-        height: 1050px ;
-        form{
-            margin-bottom: 50px;
-            margin: 0;
-            margin-bottom: 10px;
-            width: 280px;
+        height: 1200px ;
+    }
+
+    form{
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        max-width: 250px;
+        margin-left: 0px;
             .details{
-                width: 210px;
+                width: 250;
             }
+            h1{
+                width: 180px;
+            }
+            .form-wrapper{
+                max-width: 250px;
+            }
+            .get-started{
+                width: 250px;
+            }
+        .details{
+            width: 180px;
         }
-        .downolad_button{
-            margin-bottom: 10px;
-        }
-        .logo2{
-            width: 300px;
-        }
+    }
+    .downolad_button{
+        margin-bottom: 10px;
+    }
+
+    .logo2{
+        max-width: 200px;
     }
     .bacground{
         min-height: 1500px ;
@@ -100,29 +117,73 @@ li{
 
    .media{
         p{
-            font-size: 15px;
-            max-width: 300px;
-            min-width: 100px;
+
         }
         nav{
             @include inline_flex();
             justify-content: space-between;
             a{
-                padding: 5px;
+                width: 35px;
+                margin: 10px;
             }
         }
     }
-}  
-@media only screen and (max-width: 740px){
+}
+@media only screen and (max-width: 500px){
+    .media{
+        align-items: flex-start;
+        nav{
+            justify-content: space-between;
+            flex-direction: column;
+            a{
+                width: 35px;
+                margin: 10px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .image-container{
+        max-width: 130px;
+        max-height: 130px;
+    }
+    .image-container2{
+        max-width: 280px;
+    }
+    .tab-foto1{
+        max-width: 130px;
+        max-height: 130px;
+    }
+    .tab-foto2{
+        max-width: 280px;
+    }
+    .tab-all-img{
+        @include inline_flex();
+        flex-direction: column;
+        justify-content: flex-start !important;
+    }
+    .section_wrapper{
+    }
+    .section_oject1{
+        max-width: 260px;
+    }
+    .pricing1{
+        li{
+        }
+    }
+}
+
+@media only screen and (max-width: 820px){
     .features-container{
-        min-height: 1200px;
+        min-height: 1250px;
         .bacground-kalnai{
-            min-height: 1200px;
+            min-height: 1400px;
             }
         }
     .slide-wrapper{
-
         flex-direction: column;
+        justify-content: start;
+
         }
 
     .feature-wrapper{
@@ -154,13 +215,20 @@ li{
     }
     }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 1100px){
     .white-elements{
         flex-direction:column ;
         
     }
     .pricing-wrapper2{
         flex-direction: column;
+        .pricing-1{
+            .pricing{
+                li{
+                    width: 250px;
+                }
+        }
+        }
     }
 }
 
@@ -192,15 +260,13 @@ li{
     padding-top: 150px;
     @include inline_flex();
     align-items: flex-start;
- 
-
 }
 
 div div .section_oject1{
     @include inline_flex();
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
+
 }
 
 .logo2{
@@ -216,25 +282,24 @@ div div .section_oject1{
     margin: 0;
 }
 .downolad_button {
-    
     background: transparent;
     width: 135px;
     height: 42px;
-    color: white;
+    color: $text_color;
     border-style: solid;
     border-color: $text_color;
+}
+.downolad_button:hover{
+    background-color: $hover-color;
 }
 form{
     border-radius: 10px;
     width: 360px;
     margin: 40px;
-    margin-left: 80px;
+    margin-left: 40px;
     background-color:$text_color;
-    color: black;
-    margin-right: 0px;
-
-
-
+    color: $black;
+    margin-right: 0px;;
 }
 form h1{
     padding-top: 10px;
@@ -252,6 +317,7 @@ form h1{
     background-color: white;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 30px;
     align-items: flex-start;
     border-radius: 5px;
 }
@@ -264,6 +330,10 @@ span{
     border-right: none;
     width: 300px;
     padding-top: 20px;
+}
+.details:focus{
+    outline: none;
+    background-color: $hover-color;
 }
 .top_text{
     background-color: $text_color;
@@ -284,10 +354,16 @@ span{
     border-bottom-right-radius: 5px;
     background-color: rgb(65, 211, 149);
 }
+.get-started:hover{
+    background-color: rgb(38, 128, 90);
+}
 .radial-button{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: rgb(65, 211, 149);
+}
+.radial-label{
+    font-size: 15px;
 }
 .get-started{
     font-size: 25px;
@@ -302,25 +378,31 @@ span{
     box-sizing: border-box;
 }
 .media{
+    max-width: 1200px;
+    margin: 0 auto;
     @include content-wrapper();
     @include inline_flex();
+    justify-content:space-between;
     .media-links{
         @include inline_flex();
         justify-content: space-between;
+    }
+    a{
+        width: 100px;
     }
     h3{
         margin-bottom: 10px;
     }
     p{
         max-width: 420px;
-        color: rgb(209, 206, 206);
+        color: $text_color-grey;
         margin-top: 10px;
     }
 }
 // ---------------------------------
 
 .features-container{
-    height: 600px;
+    min-height: 600px;
     margin: 0 auto;
     z-index: 2;
     .bacground-kalnai{
@@ -328,7 +410,7 @@ span{
         width: 100%;
         filter: linear-gradient(to right top, #dc9683, #dc9683, #dc9683, #dc9683, #dc9683, #dd9e7e, #dba77a, #d7b078, #c6c57f, #abda97, #88ecbf, #5ffbf1);
         object-fit: cover;
-        height: 600px;
+        min-height: 1150px;
         z-index: -2;
     }
     .feature-wrapper{
@@ -338,7 +420,7 @@ span{
         .tab-section{
             .tab-container{
                 .tab-nav{
-                    padding-top: 100px;
+                    padding-top: 45px;
                     @include inline_flex();
                     .tab-ul{
                         display: flex;
@@ -394,7 +476,8 @@ span{
                            .tab-foto2{
                                padding-top: 10px;
                                height: 170px;
-                               width: 380;
+                               width: 360;
+                               padding-top: 0;
                            }
                        }
                    } 
@@ -449,6 +532,7 @@ span{
 }
 .black-text{
     max-width: 500px;
+    margin-bottom: 50px;
     .line2{
          border: 1px;
         border-color: $text_color;
@@ -524,6 +608,7 @@ span{
         min-height: 900px;
         h1{
             padding-top: 50px;
+            padding-left: 30px;
         }
         p{
             margin: 30px;
@@ -535,7 +620,7 @@ span{
             padding-top: 60px;
             padding-bottom: 50px;
             .pricing-1{
-                padding: 20px;
+                margin: 20px;
                 @include inline_flex();
                 flex-direction: column;
                 align-items: center;
@@ -553,6 +638,18 @@ span{
                         font-size: 30px;
                         color: white;
                     }
+
+                }
+                @media only screen and (max-width: 400px){
+                    li{
+                        width: 220px;
+                    }
+                    .green{width: 260px;
+                    }
+                    .with-text{
+                        width: 220px;
+                    }
+
                 }
                 .green{
                     background-color:rgb(65, 211, 149)
