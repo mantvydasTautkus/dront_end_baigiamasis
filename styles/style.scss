@@ -27,7 +27,8 @@ h1{
 }
 .nav-img{
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 header {
     position: fixed;
@@ -43,9 +44,13 @@ header {
     margin: auto;
     max-width: 1200px;
 }
+
  ul{
     @include inline_flex();
     color: $text_color;
+ }
+ .topnav{
+     margin: 0;
  }
 .topnav li:hover{
     background-color: $hover-color;
@@ -73,8 +78,7 @@ li{
     .nav-wrapper{
         @include inline_flex();
         flex-direction: column;
-        justify-content:
-        justify-content: space-between 
+        justify-content: space-between ;
     }
     .header-nav{
         justify-content: space-between;
