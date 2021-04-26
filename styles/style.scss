@@ -172,7 +172,6 @@ li{
         }
     }
 }
-
 @media only screen and (max-width: 820px){
     .features-container{
         min-height: 1250px;
@@ -185,7 +184,6 @@ li{
         justify-content: start;
 
         }
-
     .feature-wrapper{
         .tab-section{ 
             .tab-container{
@@ -205,7 +203,6 @@ li{
                         }
                     }
             }   }
-    
         }
     .black-wrapper{
         flex-direction: column;
@@ -214,11 +211,9 @@ li{
         }
     }
     }
-
 @media only screen and (max-width: 1100px){
     .white-elements{
         flex-direction:column ;
-        
     }
     .pricing-wrapper2{
         flex-direction: column;
@@ -231,7 +226,6 @@ li{
         }
     }
 }
-
     .footer-wrapper{
         div{
             img{
@@ -242,7 +236,6 @@ li{
         
     }
 // -------------------------------------;
-
 .bacground {
     position:absolute;
     top: 0;
@@ -253,7 +246,6 @@ li{
     object-fit: cover;
     height: 750px;
 }  
-
 .section_wrapper{
     @include content-wrapper();
     color: $text_color;
@@ -261,18 +253,14 @@ li{
     @include inline_flex();
     align-items: flex-start;
 }
-
 div div .section_oject1{
     @include inline_flex();
     flex-direction: column;
     align-items: flex-start;
-
 }
-
 .logo2{
     width: 350px;
 }
-
 .line{
     border: 1px;
     border-color: $text_color;
@@ -369,7 +357,6 @@ span{
     font-size: 25px;
     color: $text_color;
 }
-
 // ------------------------------
 .container{
     background-color: white;
@@ -400,7 +387,6 @@ span{
     }
 }
 // ---------------------------------
-
 .features-container{
     min-height: 600px;
     margin: 0 auto;
@@ -429,7 +415,6 @@ span{
                         width: 200px;
                         margin: 0;
                         margin-right: 30px;
-                        
                         li{
                             height: 100px;
                             width: 100px;
@@ -453,7 +438,6 @@ span{
                         .image-container2{
                             height: 170px;
                             width: 350px;
-                            
                         }
                     }
                        .slide-wrapper{
@@ -485,16 +469,12 @@ span{
             }
         }
     }
-
-
 [data-tab-content] {
   display: none;
 }
-
 .active[data-tab-content] {
   display: block;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -507,13 +487,10 @@ span{
   transition: .5s ease;
   background-color: #008CBA;
 }
-
 .image-container:hover .overlay {
   opacity: 0.5;
 }
-
 // __________?????????????????????????????????????????_____________
-
 .black-container{
     background-color: rgb(28, 28, 28);
     width: 100%;
@@ -546,23 +523,17 @@ span{
         img{
             width: 100px;
             padding: 20px;
-        
         }
         h4{
             margin-top: 15px;
            margin-bottom: 8px; 
         }
     }
-
 }
-
-
 // ------------------------------------
-
 .white-container{
     background-color: rgb(255, 255, 255);
     width: 100%;
-
     box-sizing: border-box;
     .white-wrapper{
         @include content-wrapper();
@@ -578,7 +549,6 @@ span{
         }
         .white-elements{
             @include inline_flex();
-            
             .white-element{
                 @include inline_flex();
                 flex-direction: column;
@@ -592,9 +562,7 @@ span{
         }
     }
 }
-
 // _____________________________________
-
 .pricing-container{
     background-color: rgb(102, 150, 226);
     width: 100%;
@@ -638,7 +606,6 @@ span{
                         font-size: 30px;
                         color: white;
                     }
-
                 }
                 @media only screen and (max-width: 400px){
                     li{
@@ -649,7 +616,6 @@ span{
                     .with-text{
                         width: 220px;
                     }
-
                 }
                 .green{
                     background-color:rgb(65, 211, 149)
@@ -666,9 +632,7 @@ span{
         }
     }
 }
-
 // _____________________________________________
-
 .slider-container{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -723,7 +687,6 @@ span{
         }
     }
   } 
-  
 .swiper-pagination-bullet{
     width: 20px;
     height: 20px;
@@ -732,12 +695,8 @@ span{
     width: 100px;
     height: 100px;
     position: inherit;
-
 }
-
-
 // ___________________________________________________
-
 .contact-container{
     background-color: rgb(226, 120, 102);
     width: 100%;
